@@ -1,0 +1,19 @@
+# Idea General K-means
+# El ejemplo practico se esta haciendo con la distancia euclidea, es decir que los clusters quedaran redondos.
+# Otro ejemplo de distancia: Manhattan, los clusters serían mas cuadraditos.
+# El tipo de distancia a utilizar va a depender del tipo de problema a resolver, teniendo en cuenta las consecuencias de cada tipo de distancia.
+
+# La trampa de inicializar el centroide de manera aleatoria, puede generar una clasificación incorrecto. 
+# Para solucionar este problema esta la funcion Kmeans++ en python, me corrige esos errores. 
+
+# Metodo del codo
+from sklearn.cluster import kmeans
+wcss=[]
+
+for i in range(1,11):
+# para iterar 10 veces
+  kmeans=(n_cluster=i, init='k-means++', max_iter=300, n_init=10=
+  kmeans=(cantidad de cluster, inicializacion con k-means++ estamos eliminaod la inicializacion aleatoria para corregir errores, por si el algoritmo nunca llega a acabar se pone un límite de iteraciones 300 es el valor predeterminado, inicializacion aleatoria 10 es el valor predeterminado)
+  kmeans.fit(base)
+  wcss.append(kmeans.inertia_)
+ #inertia_ calcula las distancia al centroide al cuadrado
