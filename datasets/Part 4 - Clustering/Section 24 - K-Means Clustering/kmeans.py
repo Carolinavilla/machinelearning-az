@@ -44,6 +44,7 @@ plt.scatter(X[y_kmeans == 2, 0], X[y_kmeans == 2, 1], s = 100, c = "green", labe
 plt.scatter(X[y_kmeans == 3, 0], X[y_kmeans == 3, 1], s = 100, c = "cyan", label = "Descuidados")
 plt.scatter(X[y_kmeans == 4, 0], X[y_kmeans == 4, 1], s = 100, c = "magenta", label = "Conservadores")
 plt.scatter(kmeans.cluster_centers_[:,0], kmeans.cluster_centers_[:,1], s = 300, c = "yellow", label = "Baricentros")
+    # Para pintar los baricentros, s=300 para agrandar el tamaño de la bolita
 plt.title("Cluster de clientes")
 plt.xlabel("Ingresos anuales (en miles de $)")
 plt.ylabel("Puntuación de Gastos (1-100)")
